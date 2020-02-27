@@ -9,7 +9,7 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $TERMINAL terminator
+set $TERMINAL hyper
 
 set $mod Mod4
 #set $mod Alt
@@ -176,7 +176,7 @@ bar {
 
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #00b597 #00b597 #ffffff #888888   #00b597
+client.focused          #0288D1 #0288D1 #ffffff #888888   #0288D1
 #client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #111111 #111111 #888888 #292d2e   #222222
 #client.urgent           #2f343a #900000 #ffffff #900000   #900000
@@ -185,7 +185,7 @@ client.unfocused        #111111 #111111 #888888 #292d2e   #222222
 #client.background       #000000
 
 ## BACKGROUND/WALLPAPER ##
-exec_always --no-startup-id nitrogen --set-zoom-fill --random ~/Images/bg/ --no-recurse
+exec_always --no-startup-id nitrogen --set-zoom-fill --random ~/Images/bg_code/ --no-recurse
 #exec --no-startup-id nitrogen --set-zoom-fill ~/Images/bg/Aiguille-du-midi.jpg
 #exec --no-startup-id nitrogen --restore
 
@@ -213,9 +213,9 @@ exec --no-startup-id "compton --config /home/hugo/.config/compton.conf -b"
 	#exec atom
 	#for_window [class="^Atom$"] move to workspace 2
 	
-	# Google Chrome
-	exec google-chrome
-	for_window [class="^Google\-chrome$"] move to workspace 3
+	# Vivaldi
+	exec vivaldi
+	for_window [class="^Vivaldi\-stable$"] move to workspace 3
 	
 	# Discord
 	exec discord
